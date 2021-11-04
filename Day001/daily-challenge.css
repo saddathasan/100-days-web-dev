@@ -1,0 +1,17 @@
+body {
+    margin: 50px;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+#test-description {
+    color:#0f3d2e;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
