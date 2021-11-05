@@ -2,4 +2,31 @@ body {
     margin: 50px;
 }
 
+h1 {
+    font-size: 48px;
+    color: #dc143c;
+}
 
+p {
+    font-size: 20px;
+    color: #122416;
+}
+
+a {
+    background-color: #ffffff;
+    color: #3099df;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+ol {
+    list-style: none;
+}
+
+/* li {
+    list-style: none;
+} */ 
+
+ul {
+    list-style: none;
+}

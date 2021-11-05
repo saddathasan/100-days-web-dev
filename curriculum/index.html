@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./showdown.js"></script>
+    <title>
+       Full Curriculum
+    </title>
+
+    <link href="../Day001/styles/shared.css" rel="stylesheet" />
+
+    <style type="text/css">
+        #markdown-contents {
+            width: 600px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>go back to main page... <a href="../Day001/index.html">here</a></p>
+    <div id="markdown-contents"></div>
+    <script type="text/javascript">
+        var directory = "/curriculum";
+        var filename = "Curriculum.md";
+        var path = directory + "/" + filename;
+        var md2html = function (path) {
+            // Load contents and convert to HTML
+            $("#markdown-contents").load(path, function (text, status) {
+                var sdconv = new Showdown.converter();
+                this.innerHTML = sdconv.makeHtml(text);
+            });
+        }
+        md2html(path);
+    </script>
+</body>
+
+</html>
